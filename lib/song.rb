@@ -51,4 +51,12 @@ class Song
      song.artist_name = array[0]
      song
   end
+
+  def self.create_from_filename(string)
+
+  end
+
+  def self.destroy_all
+
+  end
 end
