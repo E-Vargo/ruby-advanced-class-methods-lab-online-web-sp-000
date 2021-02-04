@@ -49,6 +49,6 @@ class Song
      array = string.split(" - ")
     song = new_by_name(array[1].chomp(".mp3"))
     song.artist_name = array[0]
-    song
+    
   end
 end
