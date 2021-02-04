@@ -48,6 +48,6 @@ class Song
   def self.new_from_filename(string)
      array = string.split(" - ")
     artist_name = array[0]
-    new_by_name(array[1].chomp(".mp3"))
+    song = new_by_name(array[1].chomp(".mp3"))
   end
 end
