@@ -54,7 +54,8 @@ class Song
 
   def self.create_from_filename(string)
     final = new_from_filename(string)
-    create_by_name(final.name)
+    song = create_by_name(final.name)
+    artist_name = create_by_name(final.artist_name)
   end
 
   def self.destroy_all
