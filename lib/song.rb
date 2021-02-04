@@ -46,7 +46,7 @@ class Song
   end
 
   def self.new_from_filename(string)
-     new_string = string.chomp(".mp3")
+     new_string = string.delete!(".mp3")
      array = new_string.split(" - ")
     artist_name = array[0]
     new_by_name(array[1])
